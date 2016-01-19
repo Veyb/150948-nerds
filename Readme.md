@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Олег Цыро](https://htmlacademy.ru/profile/id150948).
-* Наставник: `Неизвестно`.
+* Наставник: [Вадим Иванов](https://htmlacademy.ru/profile/dynamitek).
 
 ---
 
