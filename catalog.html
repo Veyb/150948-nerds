@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Нёрдс</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container">
+        <nav class="main-navigation">
+          <ul>
+            <li>
+              <a href="#">ГЛАВНАЯ</a>
+            </li>
+            <li>
+              <a href="#">СТУДИЯ</a>
+            </li>
+            <li>
+              <a href="#">КЛИЕНТЫ</a>
+            </li>
+            <li>
+              <a href="#">МАГАЗИНЫ</a>
+            </li>
+            <li>
+              <a href="#">КОНТАКТЫ</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="basket">
+          <img src="http://placehold.it/150x100" alt="Корзина" />
+          <a class="basket-btn" href="#">КОРЗИНА</a>
+        </div>
+        <div class="container-welcome">
+          <b class="welcome">ДОБРО ПОЖАЛОВАТЬ В МАГАЗИН ГОТОВЫХ МАКЕТОВ</b>
+        </div>
+      </div>
+    </header>
+    <main class="container">
+      <div class="catalog-left">
+        <b class="title">СТОИМОСТЬ:</b>
+        <div class="range-filter">
+            <div class="range-controls">
+                <div class="scale"><div class="bar"></div></div>
+                <div class="toggle min-toggle"></div>
+                <div class="toggle max-toggle"></div>
+            </div>
+            <div class="price-controls">
+                от <input class="min-price" type="text" value="0">
+                до <input class="max-price" type="text" value="15 000">
+            </div>
+        </div>
+        <b class="title">СЕТКА:</b>
+        <ul>
+          <li>
+            <label>
+              <input type="radio" name="grid-variants" value="adaptive">
+              Адаптивная
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="radio" name="grid-variants" value="fixed">
+              Фиксированная
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="radio" name="grid-variants" value="elastic">
+              Резиновая
+            </label>
+          </li>
+        </ul>
+        <b class="title">ОСОБЕННОСТИ:</b>
+        <ul>
+          <li>
+            <label>
+              <input type="checkbox" name="slider">Слайдер
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" name="block">Блок преимуществ
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" name="news">Новости
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" name="gallery">Галерея
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" name="basket">Корзина
+            </label>
+          </li>
+        </ul>
+        <a class="btn catalog-left-btn" href="#">ПОКАЗАТЬ</a>
+      </div>
+      <div class="catalog-right">
+
+        <div class="paginator">
+          <span class="paginator-btn">1</span>
+          <a class="paginator-btn" href="#">2</a>
+          <a class="paginator-btn" href="#">3</a>
+          <a class="paginator-btn-next" href="#">СЛЕДУЮЩАЯ</a>
+        </div>
+      </div>
+    </main>
+    <div class="main-map">
+
+    </div>
+    <footer class="main-footer">
+      <div class="container">
+        <section class="footer-social">
+          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+        </section>
+        <section class="footer-promo">
+          <b class="footer-promo-slogan">Давайте дружить, это выгодно!</b>
+          <p>
+            Скидка 10% для друзей из социальных сетей.
+          </p>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>
