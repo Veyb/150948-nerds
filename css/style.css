@@ -2,10 +2,170 @@ body {
   font-family: "Roboto";
   font-size: 16px;
   line-height: 22px;
+  margin: 0;
 }
 h2 {
   font-size: 18px;
+  line-height: 30px;
 }
 b {
   font-size: 36px;
+}
+div {
+  display: block;
+}
+.container {
+  width: 880px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+.page-header {
+  background-color: #eeeeee;
+  margin-bottom: 100px;
+}
+.main-header {
+  padding-top: 27px;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+.main-header-logo {
+  float: left;
+  width: 220px;
+}
+nav {
+  float: left;
+  width: 560px;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+.main-header-navigation li {
+  display: inline-block;
+  margin-right: 45px;
+}
+.basket {
+  float: right;
+  padding-top: 20px;
+}
+.slide {
+  /*min-height: 325px;*/
+  display: none;
+}
+.slider-switcher {
+  position: absolute;
+  top: 320px;
+}
+.slider-switcher-1 {
+  left: 48%;
+}
+.slider-switcher-2 {
+  left: 50%;
+}
+.slider-switcher-3 {
+  left: 52%;
+}
+.slider-switcher:checked + .slide {
+  display: block;
+}
+.slide-info {
+  min-height: 220px;
+  padding: 60px 410px 60px 0;
+  background-repeat: no-repeat;
+}
+.slide-info-1 {
+  background-image: url(../img/slide1.png);
+  background-position: right 50%;
+}
+.slide-info-2 {
+  background-image: url(../img/slide2.png);
+  background-position: right 50%;
+}
+.slide-info-3 {
+  background-image: url(../img/slide3.png);
+  background-position: right bottom;
+}
+
+.products-section {
+  min-height: 380px;
+  margin-bottom: 65px;
+  border-bottom: 2px solid #eeeeee;
+}
+.products {
+  float: left;
+  width: 240px;
+  margin-right: 80px;
+  padding-top: 124px;
+  font-size: 15px;
+  line-height: 22px;
+}
+.products-site {
+  background-image: url(../img/products-site.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.products-app {
+  background-image: url(../img/products-app.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.products-present {
+  background-image: url(../img/products-present.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.products-present {
+  margin-right: 0px;
+}
+.about-info {
+  width: 580px;
+  padding-top: 55px;
+  padding-bottom: 35px;
+}
+.about-job {
+  padding-bottom: 65px;
+  min-height: 180px;
+}
+.about-job-orders {
+  float: left;
+  width: 580px;
+}
+.about-job-productivity {
+  float: right;
+  width: 240px;
+}
+.partners {
+  padding-top: 40px;
+  padding-bottom: 25px;
+  border-top: 2px solid #eeeeee;
+  border-bottom: 2px solid #eeeeee;
+  margin-bottom: 85px;
+  font-size: 0px;
+}
+.partners a {
+  margin-right: 80px;
+  opacity: 0.2;
+}
+.partners a:last-child {
+  margin-right: 0px;
+}
+.main-footer {
+  padding-top: 60px;
+  padding-bottom: 65px;
+}
+.footer-social {
+  float: left;
+  width: 300px;
+  margin-right: 20px;
+}
+.footer-promo {
+  float: left;
+  width: 560px;
+}
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both;
 }
