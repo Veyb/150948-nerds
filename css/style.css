@@ -36,11 +36,16 @@ div {
 nav {
   float: left;
   width: 560px;
-  padding: 0;
+  /*padding: 0;
+  margin: 0;*/
+}
+ul {
   margin: 0;
+  padding: 0;
 }
 a {
   text-decoration: none;
+  color: black;
 }
 .main-header-navigation li {
   display: inline-block;
@@ -48,7 +53,6 @@ a {
 }
 .basket {
   float: right;
-  padding-top: 20px;
 }
 .slide {
   /*min-height: 325px;*/
