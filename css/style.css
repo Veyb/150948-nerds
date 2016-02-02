@@ -256,7 +256,19 @@ a {
   padding-right: 60px;
 }
 .catalog-filters-group {
-  padding-bottom: 45px;
+  padding-bottom: 40px;
+}
+.catalog-filters-group ul {
+  margin-left: 0;
+  padding-left: 0;
+}
+.catalog-filters-group li {
+  list-style-type: none;
+  line-height: 20px;
+  padding-bottom: 20px;
+}
+.catalog-filters-group li:last-child {
+  padding-bottom: 0;
 }
 .range-filter {
     width:240px;
@@ -294,7 +306,7 @@ a {
     border-radius:50%;
 }
 .max-toggle {
-    left:165px;
+    left:155px;
 }
 .price-controls input {
     width:55px;
@@ -306,6 +318,7 @@ a {
     text-align:center;
     color:#283136;
     border-radius:5px;
+    font-weight: 500;
 }
 .price-controls {
   text-transform: uppercase;
