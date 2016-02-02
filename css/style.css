@@ -2,17 +2,47 @@ body {
   font-family: "Roboto";
   font-size: 16px;
   line-height: 22px;
+  color: #283136;
   margin: 0;
 }
 h2 {
   font-size: 18px;
   line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+  font-weight: normal;
 }
 b {
   font-size: 36px;
+  line-height: 36px;
+  color: #000000;
+  font-weight: normal;
 }
 div {
   display: block;
+}
+.index-btn {
+  display: block;
+  width: 120px;
+  padding: 10px;
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #fb565a;
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 25px;
+  font-weight: lighter;
+}
+.slide-btn {
+  width: 220px;
+}
+.btn-app {
+  background-color: #00ca74;
+}
+.btn-present {
+  background-color: #efc84a;
 }
 .container {
   width: 880px;
@@ -21,7 +51,7 @@ div {
 }
 .page-header {
   background-color: #eeeeee;
-  margin-bottom: 100px;
+  margin-bottom: 75px;
 }
 .main-header {
   padding-top: 27px;
@@ -33,19 +63,19 @@ div {
   float: left;
   width: 220px;
 }
-nav {
+.main-header-navigation {
   float: left;
   width: 560px;
-  /*padding: 0;
-  margin: 0;*/
 }
-ul {
+.main-header-navigation ul {
   margin: 0;
   padding: 0;
+  padding-left: 90px;
+  padding-top: 25px;
 }
 a {
   text-decoration: none;
-  color: black;
+  color: #000000;
 }
 .main-header-navigation li {
   display: inline-block;
@@ -53,9 +83,10 @@ a {
 }
 .basket {
   float: right;
+  padding-top: 25px;
+  padding-left: 30px;
 }
 .slide {
-  /*min-height: 325px;*/
   display: none;
 }
 .slider-switcher {
@@ -94,14 +125,13 @@ a {
 
 .products-section {
   min-height: 380px;
-  margin-bottom: 65px;
   border-bottom: 2px solid #eeeeee;
 }
 .products {
   float: left;
   width: 240px;
   margin-right: 80px;
-  padding-top: 124px;
+  padding-top: 134px;
   font-size: 15px;
   line-height: 22px;
 }
@@ -124,13 +154,23 @@ a {
   margin-right: 0px;
 }
 .about-info {
-  width: 580px;
   padding-top: 55px;
   padding-bottom: 35px;
+  padding-right: 300px;
+  background-image: url(../img/about-logo.png);
+  background-repeat: no-repeat;
+  background-position: right 50%;
 }
 .about-job {
   padding-bottom: 65px;
   min-height: 180px;
+  border-bottom: 2px solid #eeeeee;
+}
+.about-job h2 {
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #283136;
 }
 .about-job-orders {
   float: left;
@@ -143,7 +183,6 @@ a {
 .partners {
   padding-top: 40px;
   padding-bottom: 25px;
-  border-top: 2px solid #eeeeee;
   border-bottom: 2px solid #eeeeee;
   margin-bottom: 85px;
   font-size: 0px;
@@ -167,6 +206,44 @@ a {
 .footer-promo {
   float: left;
   width: 560px;
+}
+.shop-title {
+  width: 670px;
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 80px;
+  text-align: center;
+}
+.shop-title b {
+  font-size: 40px;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+.catalog {
+  padding-bottom: 70px;
+}
+.catalog-filters {
+  float: left;
+  width: 240px;
+  padding-right: 60px;
+}
+.catalog-content {
+  float: right;
+  width: 580px;
+}
+.catalog-item {
+  float: left;
+  margin-right: 80px;
+  margin-bottom: 80px;
+  padding-top: 30px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+}
+.catalog-item:nth-child(2n) {
+  margin-right: 0px;
+}
+.catalog-item .item-action {
+  display: none;
 }
 .clearfix:after {
   content: '';
