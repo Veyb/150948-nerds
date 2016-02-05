@@ -188,21 +188,24 @@ a {
   padding-top: 25px;
   padding-left: 30px;
 }
+.slider {
+  position: relative;
+}
 .slide {
   display: none;
 }
 .slider-switcher {
   position: absolute;
-  top: 320px;
+  top: 240px;
 }
 .slider-switcher-1 {
-  left: 48%;
+  left: 47.5%;
 }
 .slider-switcher-2 {
   left: 50%;
 }
 .slider-switcher-3 {
-  left: 52%;
+  left: 52.5%;
 }
 .slider-switcher:checked + .slide {
   display: block;
