@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -12,24 +13,26 @@
           <a class="main-header-logo" href="index.html">
             <img src="img/header-logo.png" width="139" height="56" alt="HTML Academy: Нёрдс">
           </a>
-          <nav class="main-header-navigation">
-            <ul>
-              <li>
-                <a href="index.html">Студия</a>
-              </li>
-              <li>
-                <a href="#">Клиенты</a>
-              </li>
-              <li class="current">
-                <a href="catalog.html">Магазин</a>
-              </li>
-              <li>
-                <a href="#">Контакты</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="basket">
-            <a href="#"><span class="icon-basket"></span>Корзина</a>
+          <div class="main-header-menu clearfix">
+            <nav class="main-header-navigation">
+              <ul>
+                <li>
+                  <a href="index.html">Студия</a>
+                </li>
+                <li>
+                  <a href="#">Клиенты</a>
+                </li>
+                <li class="current">
+                  <a href="catalog.html">Магазин</a>
+                </li>
+                <li>
+                  <a href="#">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="basket">
+              <a href="#"><span class="icon-basket"></span>Корзина</a>
+            </div>
           </div>
         </div>
         <div class="shop-title">
@@ -100,24 +103,26 @@
             <button class="btn btn-form" type="button">Показать</button>
           </form>
         </div>
-        <div class="catalog-content clearfix">
-          <div class="catalog-sort-left">
-            <ul>
-              <li>Сортировать:</li>
-              <li>
-                <a href="#"><span>По цене</span></a>
-              </li>
-              <li>
-                <a href="#"><span>По типу</span></a>
-              </li>
-              <li>
-                <a class="sort-left-current" href="#"><span>По функционалу</span></a>
-              </li>
-            </ul>
-          </div>
-          <div class="catalog-sort-right">
-            <a href="#"><span class="icon-down-dir sort-right-current"></span>По убыванию</a>
-            <a href="#"><span class="icon-up-dir"></span>По возрастанию</a>
+        <div class="catalog-content">
+          <div class="catalog-sort clearfix">
+            <div class="catalog-sort-left">
+              <ul>
+                <li>Сортировать:</li>
+                <li>
+                  <a href="#"><span>По цене</span></a>
+                </li>
+                <li>
+                  <a href="#"><span>По типу</span></a>
+                </li>
+                <li>
+                  <a class="sort-left-current" href="#"><span>По функционалу</span></a>
+                </li>
+              </ul>
+            </div>
+            <div class="catalog-sort-right">
+              <a href="#"><span class="icon-down-dir sort-right-current"></span>По убыванию</a>
+              <a href="#"><span class="icon-up-dir"></span>По возрастанию</a>
+            </div>
           </div>
           <div class="catalog-items clearfix">
             <div class="catalog-item">
@@ -202,9 +207,21 @@
         </div>
       </div>
     </main>
-    <footer class="main-footer">
+    <footer class="footer">
       <div class="map">
-
+        <div class="container clearfix">
+          <div class="map-info">
+            <b>NЁRDS DESIGN STUDIO</b>
+            <p>
+              191186, Санкт-Петербург,
+              ул. Б. Конюшенная, д. 19/8
+            </p>
+            <p>
+              тел. +7 (812) 275-75-75
+            </p>
+            <a class="btn map-btn" href="#">Напишите нам</a>
+          </div>
+        </div>
       </div>
       <div class="container clearfix">
         <section class="footer-social">
@@ -213,7 +230,7 @@
           <a class="social-btn" href="#"><span class="icon-instagramm"></span>Инстаграм</a>
         </section>
         <section class="footer-promo">
-          <b class="footer-promo-slogan">Давайте дружить, это выгодно!</b>
+          <b>Давайте дружить, это выгодно!</b>
           <p>
             Скидка 10% для друзей из социальных сетей.
           </p>
