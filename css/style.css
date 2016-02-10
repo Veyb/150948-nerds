@@ -1,23 +1,37 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto.woff") format("woff"),
+       url("../fonts/roboto.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/robotomedium.woff") format("woff"),
+       url("../fonts/robotomedium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 22px;
   color: #283136;
   margin: 0;
+  font-weight: 500;
 }
 h2 {
   font-size: 18px;
   line-height: 30px;
   color: #000000;
   text-transform: uppercase;
-  font-weight: normal;
   margin: 0;
 }
 b {
   font-size: 36px;
   line-height: 36px;
   color: #000000;
-  font-weight: normal;
 }
 @font-face {
   font-weight: normal;
@@ -102,7 +116,6 @@ div {
   background-color: #fb565a;
   font-size: 18px;
   color: #ffffff;
-  font-weight: normal;
 }
 .item-btn:hover {
   background-color: #d6494d;
@@ -385,8 +398,15 @@ input:checked + div + .slider-switcher {
   font-size: 0px;
 }
 .partners a {
-  margin-right: 80px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 120px;
   opacity: 0.2;
+  padding-top: 5px;
+  padding-bottom: 9px;
+}
+.partners a:first-child {
+  margin-left: 11px;
 }
 .partners a:hover {
   opacity: 1;
@@ -706,6 +726,7 @@ span.sort-right-current {
   padding-top: 30px;
   background-color: #f1f1f1;
   border-radius: 5px;
+  overflow: hidden;
 }
 .catalog-item:nth-child(2n) {
   margin-right: 0px;
