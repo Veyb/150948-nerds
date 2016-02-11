@@ -169,5 +169,23 @@
         </section>
       </div>
     </footer>
+    <div class="popup-feedback">
+      <button class="popup-feedback-close" type="button" title="Закрыть">Закрыть</button>
+      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="form-field name-field">
+          <label for="name-field">Ваше имя:</label>
+          <input type="text" name="name" placeholder="Представьтесь, пожалуйста" id="name-field">
+        </div>
+        <div class="form-field email-field">
+          <label for="email-field">Ваш e-mail:</label>
+          <input type="email" name="email" placeholder="Для отправки ответа" id="email-field">
+        </div>
+        <div class="form-field text-field">
+          <label for="text-field">Текст письма:</label>
+          <textarea name="text" placeholder="В свободной форме" id="text-field"></textarea>
+        </div>
+        <button class="btn send-btn" type="submit">Отправить</button>
+      </form>
+    </div>
   </body>
 </html>
