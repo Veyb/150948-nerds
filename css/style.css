@@ -421,10 +421,9 @@ input:checked + div + .slider-switcher {
 }
 .footer {
   padding-bottom: 65px;
+  position: relative;
 }
 .map {
-  padding-bottom: 73px;
-  position: relative;
   height: 416px;
   background: url(../img/main-map.jpg) no-repeat 50% 0;
 }
@@ -462,6 +461,9 @@ input:checked + div + .slider-switcher {
 .map-btn:active {
   background-color: #b63538;
   box-shadow: inset 0 3px #9b2d30;
+}
+.footer-section {
+  padding-top: 73px;
 }
 .footer-social {
   float: left;
@@ -799,6 +801,9 @@ span.sort-right-current {
   box-shadow: 0 20px 40px rgba(0,1,1,0.75);
   display: none;
 }
+.popup-feedback-show {
+  display: block;
+}
 .popup-feedback-close {
   position: absolute;
   top: 5px;
@@ -878,6 +883,7 @@ span.sort-right-current {
 .form-field textarea::-moz-placeholder {
   color: #000000;
   text-transform: uppercase;
+  opacity: 1;
 }
 .form-field input:-ms-input-placeholder,
 .form-field textarea:-ms-input-placeholder {
