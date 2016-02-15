@@ -1,15 +1,8 @@
 @font-face {
   font-family: "Roboto";
-  src: url("../fonts/roboto.woff") format("woff"),
-       url("../fonts/roboto.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Roboto";
   src: url("../fonts/robotomedium.woff") format("woff"),
        url("../fonts/robotomedium.woff2") format("woff2");
-  font-weight: 500;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -19,7 +12,8 @@ body {
   line-height: 22px;
   color: #283136;
   margin: 0;
-  font-weight: 500;
+  font-weight: 400;
+  min-width: 900px;
 }
 h2 {
   font-size: 18px;
@@ -27,13 +21,13 @@ h2 {
   color: #000000;
   text-transform: uppercase;
   margin: 0;
-  font-weight: 500;
+  font-weight: 400;
 }
 b {
   font-size: 36px;
   line-height: 36px;
   color: #000000;
-  font-weight: 500;
+  font-weight: 400;
 }
 @font-face {
   font-weight: normal;
@@ -95,6 +89,8 @@ div {
   padding-bottom: 10px;
   font-size: 12px;
   line-height: 18px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   color: #000000;
   background-color: #f1f1f1;
@@ -231,10 +227,10 @@ a {
   text-decoration: none;
   color: #000000;
 }
-.main-header a:hover {
+.main-header-menu a:hover {
   color: #fb565a;
 }
-.main-header a:active {
+.main-header-menu a:active {
   color: #000000;
   opacity: 0.4;
 }
@@ -259,6 +255,7 @@ a {
 }
 .slider {
   position: relative;
+  width: 880px;
 }
 .slide {
   display: none;
@@ -516,7 +513,7 @@ input:checked + div + .slider-switcher {
   font-size: 40px;
   text-transform: uppercase;
   line-height: 1.2;
-  font-weight: 500;
+  font-weight: 400;
 }
 .catalog {
   padding-bottom: 79px;
@@ -592,7 +589,6 @@ input:checked + div + .slider-switcher {
     text-align:center;
     color:#283136;
     border-radius:3px;
-    font-weight: 500;
 }
 .price-controls {
   text-transform: uppercase;
@@ -803,6 +799,10 @@ span.sort-right-current {
 }
 .popup-feedback-show {
   display: block;
+  animation: occurrence 0.7s;
+}
+.popup-feedback-error {
+  animation: shake 0.6s;
 }
 .popup-feedback-close {
   position: absolute;
@@ -864,7 +864,7 @@ span.sort-right-current {
   margin-top: 10px;
   font-size: 12px;
   line-height: 18px;
-  font-weight: 500;
+  font-family: "Roboto", sans-serif;
 }
 .form-field input:hover,
 .form-field textarea:hover {
@@ -919,6 +919,27 @@ span.sort-right-current {
 .send-btn:active {
   background-color: #b63538;
   box-shadow: inset 0 3px #9b2d30;
+}
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+  }
+}
+@keyframes occurrence {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 .clearfix:after {
   content: '';
