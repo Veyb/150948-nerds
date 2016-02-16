@@ -5,6 +5,14 @@
   font-weight: 400;
   font-style: normal;
 }
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+
+  font-family: "symbols-nerds";
+  src: url("../fonts/symbols-nerds.woff") format("woff"),
+       url("../fonts/symbols-nerds.woff2") format("woff2");
+}
 
 body {
   font-family: "Roboto", sans-serif;
@@ -28,14 +36,6 @@ b {
   line-height: 36px;
   color: #000000;
   font-weight: 400;
-}
-@font-face {
-  font-weight: normal;
-  font-style: normal;
-
-  font-family: "symbols-nerds";
-  src: url("../fonts/symbols-nerds.woff") format("woff"),
-       url("../fonts/symbols-nerds.woff2") format("woff2");
 }
 
 [class^="icon-"]::before,
@@ -418,19 +418,25 @@ input:checked + div + .slider-switcher {
 }
 .footer {
   padding-bottom: 65px;
-  position: relative;
 }
 .map {
   height: 416px;
   background: url(../img/main-map.jpg) no-repeat 50% 0;
 }
+.map .container {
+  position: relative;
+}
+.map-inner {
+  height: 100%;
+}
 .map-info {
   position: absolute;
   top: 88px;
-  float: left;
+  left: 10px;
   padding: 26px 20px 26px 21px;
   background-color: #ffffff;
   width: 209px;
+  z-index: 3;
 }
 .map-info b {
   font-size: 16px;
@@ -796,6 +802,7 @@ span.sort-right-current {
   background-color: #ffffff;
   box-shadow: 0 20px 40px rgba(0,1,1,0.75);
   display: none;
+  z-index: 5;
 }
 .popup-feedback-show {
   display: block;
