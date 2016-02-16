@@ -1,7 +1,7 @@
 function initMap() {
   var mapOptions = {
     zoom: 17,
-    center: {lat: 59.938903, lng: 30.320322},
+    center: {lat: 59.939203, lng: 30.319922},
     disableDefaultUI: true,
     scrollwheel: false
   }
