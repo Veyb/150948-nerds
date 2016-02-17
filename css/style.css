@@ -78,9 +78,6 @@ a:hover span.icon-basket {
 a:active span.icon-basket {
   opacity: 0.5;
 }
-div {
-  display: block;
-}
 .btn {
   display: inline-block;
   vertical-align: top;
@@ -396,7 +393,7 @@ input:checked + div + .slider-switcher {
   margin-bottom: 85px;
   font-size: 0px;
 }
-.partners a {
+.partners-item {
   display: inline-block;
   vertical-align: middle;
   margin-right: 120px;
@@ -404,16 +401,16 @@ input:checked + div + .slider-switcher {
   padding-top: 5px;
   padding-bottom: 9px;
 }
-.partners a:first-child {
+.partners-item:first-child {
   margin-left: 11px;
 }
-.partners a:hover {
+.partners-item:hover {
   opacity: 1;
 }
-.partners a:active {
+.partners-item:active {
   opacity: 1;
 }
-.partners a:last-child {
+.partners-item:last-child {
   margin-right: 0px;
 }
 .footer {
