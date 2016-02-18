@@ -656,7 +656,7 @@ input[type="checkbox"]:disabled + label::before {
 .catalog-sort-left span {
   opacity: 0.2;
 }
-.catalog-sort-left a:hover span {
+.catalog-sort-left span:hover {
   opacity: 1;
 }
 .catalog-sort-left {
@@ -688,7 +688,7 @@ input[type="checkbox"]:disabled + label::before {
   margin-right: 40px;
 }
 .catalog-sort-left a.sort-left-current,
-.catalog-sort-left .sort-left-current span {
+.sort-left-current span {
   opacity: 1;
   border-bottom: none;
 }
@@ -715,10 +715,10 @@ input[type="checkbox"]:disabled + label::before {
   line-height: 20px;
   color: #c1c1c1;
 }
-.catalog-sort-right a:hover span {
+.catalog-sort-right span:hover {
   color: #b5b5b5;
 }
-.catalog-sort-right a:active span {
+.catalog-sort-right span:active {
   color: #000000;
 }
 span.sort-right-current {
@@ -799,6 +799,10 @@ span.sort-right-current {
   box-shadow: 0 20px 40px rgba(0,1,1,0.75);
   display: none;
   z-index: 5;
+}
+.feedback {
+  width: 460px;
+  margin: 70px auto 0;
 }
 .popup-feedback-show {
   display: block;

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Нёрдс</title>
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="container">
+        <div class="main-header clearfix">
+          <a class="main-header-logo" href="index.html">
+            <img src="img/header-logo.png" width="139" height="56" alt="HTML Academy: Нёрдс">
+          </a>
+          <div class="main-header-menu clearfix">
+            <nav class="main-header-navigation">
+              <ul>
+                <li>
+                  <a href="index.html">Студия</a>
+                </li>
+                <li>
+                  <a href="#">Клиенты</a>
+                </li>
+                <li class="current">
+                  <a href="catalog.html">Магазин</a>
+                </li>
+                <li>
+                  <a href="#">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="basket">
+              <a href="#"><span class="icon-basket"></span>Корзина</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="container">
+      <div class="feedback">
+        <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+          <div class="form-field name-field">
+            <label for="name-field">Ваше имя:</label>
+            <input type="text" name="name" placeholder="Представьтесь, пожалуйста" id="name-field">
+          </div>
+          <div class="form-field email-field">
+            <label for="email-field">Ваш e-mail:</label>
+            <input type="email" name="email" placeholder="Для отправки ответа" id="email-field">
+          </div>
+          <div class="form-field text-field">
+            <label for="text-field">Текст письма:</label>
+            <textarea name="text" placeholder="В свободной форме" id="text-field"></textarea>
+          </div>
+          <button class="btn send-btn" type="submit">Отправить</button>
+        </form>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container footer-section clearfix">
+        <section class="footer-social">
+          <a class="social-btn" href="#"><span class="icon-vk"></span>Вконтакте</a>
+          <a class="social-btn" href="#"><span class="icon-facebook"></span>Фейсбук</a>
+          <a class="social-btn" href="#"><span class="icon-instagramm"></span>Инстаграм</a>
+        </section>
+        <section class="footer-promo">
+          <b>Давайте дружить, это выгодно!</b>
+          <p>
+            Скидка 10% для друзей из социальных сетей.
+          </p>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>
